@@ -1,0 +1,77 @@
+<html>
+<head>
+
+
+<style text="text/css">
+body
+{
+background:url('bg.jpg')no-repeat center center/cover;
+}
+form
+{
+color:white;
+}
+div
+{
+max-height:500px;
+max-width:400px;
+background-color:rgba(0,0,0,0.5);
+box-shadow:inset -5px -5px rgb(0,0,0,0.5);
+padding:10px 5px 10px 17px;
+margin-top:20px;
+margin-right:600px;
+background-position:10px 50px;
+border-width:thick;
+border-radius:25px;
+border-color:white;
+input:link,input:hover
+{
+color:green;
+background-color:yellow;
+width:120px;
+text-align:center;
+text-decoration:none;
+}
+
+</style>
+
+<script language="javascript">
+function check()
+{
+var x,y;
+x=frm.nm1.value;
+y=frm.nm1.value;
+if(x==""||y=="")
+{
+alert("INCORRECT");
+return false;
+}
+if(x=="pallavi"||y=="123")
+{
+alert("WELCOME ADMIN");
+return true;
+}
+else
+{
+alert("Incorrect user");
+return false;
+}
+}
+</script>
+</head>
+<body>
+
+<center>
+<div>
+
+               <form name="frm"onsubmit="return check();"method="get" action="welcomeadmin.html">
+<h1>"LOGIN"</h1>
+          <h3> Enter Name<input type="text" name="nm1" placeholder="enter username" size=20><br><br>
+           Enter Password<input type="Enter Password" name="nm2"placeholder="enter password" size=20><br><br><h3>
+</h1><input type="submit"value="login"></h1>
+</form>
+</div>
+</center>
+
+</body>
+</html>
